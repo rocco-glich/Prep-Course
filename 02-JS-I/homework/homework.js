@@ -71,11 +71,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-if (str1===str2) {
-  return true;
-}else {
-  return false;
-}
+return str1.length === str2.length;
 }
 
 function menosQueNoventa(num) {
@@ -134,14 +130,15 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-return mat.pow(num,2)
+return Math.pow(num,2)
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-return num * num * num *;
+return num * num * num;
 }
+
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
@@ -160,33 +157,22 @@ if (resto >=0.5) {
 }else {
   return entero;
 }
-return mat.round(num);
+return Math.round(num);
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  var resto = num %1;
-  var entero = num - resto;
-  if (resto >=0.5) {
-    return entero +1;
 
-  }else {
-    return entero;
-  }
-  return mat.ceil(num);
+  return Math.ceil(num);
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
  //Pista: investigá qué hace el método Math.random()
- int max= 1;
- int min= 0;
- int range = max - min + 1;
-for (int a = 0; a < 1 ; a++){
-  int rand =(int)(Math.random()* range + min;)
+
   return Math.random();
-}
+
 }
 
 function esPositivo(numero) {
@@ -197,11 +183,11 @@ function esPositivo(numero) {
 if (numero === 0) {
 return false;
 }
-else if (numero >0) {
-  return "el numero es positivo";
+else if (numero > 0) {
+  return "Es positivo";
 }
 else {
-  return "el numero es negativo";
+  return "Es negativo";
 }
 }
 
@@ -224,7 +210,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-return 'hola' + nombre + '!';
+return 'Hola ' + nombre + '!';
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -269,12 +255,12 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
 if (letra.length > 1){
-  return "dato incorrecto"
+  return "Dato incorrecto"
 }
 if(letra==="a" || letra==="e" || letra==="i" || letra==="o" || letra==="u" ){
-  return "es vocal"
+  return "Es vocal"
 }
-return "dato incorrecto"
+return "Dato incorrecto"
 }
 
 
